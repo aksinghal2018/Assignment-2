@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContactUs Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="Javascript/ecom.js "></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+            var namediv=document.getElementById("namediv");
+            var mobilediv=document.getElementById("mobilediv");
+            var emaildiv=document.getElementById("emaildiv");
+            var commentdiv=document.getElementById("commentdiv");
+            namediv.style.display="none";
+            mobilediv.style.display="none";
+            emaildiv.style.display="none";
+            commentdiv.style.display="none";
+        function verify(){
+            var namecheck=/^[a-zA-Z]+ [a-zA-Z]+$/;
+            var numbercheck=/^(?:(?:\+|0{0,2})91(\s*|[\-])?|[0]?)?([6789]\d{2}([ -]?)\d{3}([ -]?)\d{4})$/;
+            var emailcheck=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            var commentcheck=/^[a-zA-Z0-9]{20,200}$/;
+            var name=document.getElementById("name");
+            var number=document.getElementById("number");
+            var email=document.getElementById("email");
+            var comment=document.getElementById("comment");
+            var namediv=document.getElementById("namediv");
+            var mobilediv=document.getElementById("mobilediv");
+            var emaildiv=document.getElementById("emaildiv");
+            var commentdiv=document.getElementById("commentdiv");
+
+            if(!namecheck.test(name.value)){
+                document.getElementById("name").focus();
+                namediv.style.display="block";
+            }
+            else if(!(numbercheck.test(number.value))){
+                document.getElementById("number").focus();
+                mobilediv.style.display="block";
+            }
+            else if(!(emailcheck.test(email.value))){
+                document.getElementById("email").focus();
+                emaildiv.style.display="block";
+            }
+            else if(!(commentcheck.test(comment.value))){
+                document.getElementById("comment").focus();
+                commentdiv.style.display="block";
+            }
+        }
+        function reset1(){
+            var namediv1=document.getElementById("namediv");
+            var mobilediv1=document.getElementById("mobilediv");
+            var emaildiv1=document.getElementById("emaildiv");
+            var commentdiv1=document.getElementById("commentdiv");
+            namediv1.style.display="none";
+            mobilediv1.style.display="none";
+            emaildiv1.style.display="none";
+            commentdiv1.style.display="none";
+        }
+    </script>
+</head>
+<body>
+    <main class="ml-4 mr-4 contactus">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html"><img class="img logoimg" src="images/logo.png" alt="logo"></a>)
+            <h4>Shop</h4>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="row d-flex justify-content-center w-100">
+              <div class=" col-md-8 navbar-nav w-100 text-center ">
+                <a class="nav-item nav-link active mr-4" href="index.html">HOME <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link mr-4" href="#">SHOP</a>
+                <a class="nav-item nav-link mr-4" href="#">PICNIC</a>
+                <a class="nav-item nav-link mr-4" href="#">PAGE</a>
+                <a class="nav-item nav-link mr-4" href="#">PROMOTION</a>
+                <a class="nav-item nav-link mr-4" href="#">BLOG</a>
+                <a class="nav-item nav-link mr-4" href="#">CONTACT_US</a>
+              </div>
+              </div>
+              <div class="navbar-nav ml-auto ">
+                  <div class="mr-4">
+                <i class="fa fa-search" aria-hidden="true"></i></div>
+                <div class="mr-4">
+                <i class="fas fa-shopping-cart"></i></div>
+                <div class="mr-4">
+                <i class="fa fa-bars" aria-hidden="true"></i></div>
+              </div>
+            </div>
+          </nav>
+          <section class="contactus_form">
+            <div class="conatainer text-center">
+                <h1>Contact us</h1>
+                <p style="margin: 10px 350px 10px 350px;">Do you have any questions? Please do not hesitate to contact us directly.
+                     Our team will come back to you within a matter of hours to help you.</p>
+                <div class="conatiner text-left " style="width:50%;height: auto;margin-left: 25%;border: 2px solid black;margin-bottom: 20px;">
+                    <form style="padding: 70px;">
+                        Name:<input type="text" id="name" style="margin-left: 20px;width: 70%;"><br/><br/>
+                        <div class="alert alert-primary" id="namediv" role="alert" style="display: none;">
+                            Enter Full Name
+                          </div>
+                        Mobile:<input type="text" id="number" style="margin-left: 16px;width: 70%;"><br/><br/>
+                        <div class="alert alert-primary" id="mobilediv" role="alert" style="display: none;">
+                            only 10 digit allowed
+                          </div>
+                        Email:<input type="text" id="email" style="margin-left: 22px;width: 70%;"><br/><br/>
+                        <div class="alert alert-primary" id="emaildiv" role="alert" style="display: none;">
+                            incorrect email format
+                          </div>
+                        Comment:<br/><textarea id="comment" style="width: 90%;height: 100px;background-color: grey;"></textarea>
+                        <div class="alert alert-primary" id="commentdiv" role="alert" style="display: none;">
+                            allow 20-200 alphabet
+                          </div>
+                        <button type="button" id="sbm" onclick="verify()">
+                            Submit
+                        </button>
+                        <button type="reset" id="sbm" onclick="reset1()" >
+                            Reset
+                        </button>
+                    </form>
+                </div>
+                     
+            </div>
+          </section>
+          <footer class="page-footer font-small footerpart">
+            <div class="container text-center  text-white">
+              <img class="img  footerimg mt-4" src="images/footer.png" alt="footerimg">
+              <div class="d-flex justify-content-center mt-2">
+              <div class="container w-75 text-center">
+                  <p><q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non deserunt deleniti esse ut corrupti facilis tempore suscipit ratione harum consequuntur quos, illo blanditiis dolore necessitatibus
+                       voluptate quaerat at numquam pariatur?</q></p>
+              </div>
+              </div>
+              <h4 class="ml-4">BILLY GRAHAM</h4>
+              <h6><i>Web Designer</i></h6>
+              <div class="d-flex justify-content-center ">
+                  <div class="row">
+                      <span class="footercircle  "></span>
+                      <div class="footercircle mr-2 ">
+                          <div class="footercircle1 "></div>
+                          </div>
+                      <span class="footercircle "></span>
+                  </div>
+              </div>
+            </div>
+            <div class=" mt-4 ">
+                <div class="d-flex text-center ">
+                  <div style="width: 20%; height: 50px; background-color: blue;">
+                      <img src="images/facebook.png" alt="facebookicon" style="width: 16px; height: 16px; border-radius: 50%;">
+                      <a class="text-white" href="#" style="text-decoration: none;">FACEBOOK</a>
+                    </div>
+                    <div style="width: 20%; height: 50px; background-color:skyblue; ">
+                      <img src="images/twitter.png" alt="twittericon" style="width: 16px; height: 16px; border-radius: 50%;">
+                      <a class="text-white" href="#" style="text-decoration: none;">TWITTER</a>
+                    </div>
+                    <div style="width: 20%; height: 50px; background-color:#e227e2 ">
+                      <img src="images/instagram.jpg" alt="instagramicon" style="width: 16px; height: 16px; border-radius: 50%;">
+                      <a class="text-white" href="#" style="text-decoration: none;">INSTAGRAM</a>
+                    </div>
+                    <div style="width: 20%; height: 50px; background-color:#b33f66; ">
+                      <img src="images/dribble.JPG" alt="dribbleicon" style="width: 16px; height: 16px; border-radius: 50%;">
+                      <a class="text-white" href="#" style="text-decoration: none;">DRIBBLE</a>
+                    </div>
+                    <div style="width: 20%; height: 50px; background-color:red; ">
+                      <img src="images/pintrest.png" alt="pintresticon" style="width: 16px; height: 16px; border-radius: 50%;">
+                      <a class="text-white" href="#" style="text-decoration: none;">PINTREST</a>
+                    </div>
+                 </div>
+                 </div>
+                 <div class="text-center">
+                     <img src="images/logo.png" alt="logo" style="width: 170px; height: 40px; margin-top: 25px;;" >
+                 </div>
+                 <div class="container text-center text-white mt-4">
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore qui doloremque laborum quos quo asperiores beatae exercitationem,
+                       aliquam ipsam sapiente rerum fugiat delectus quia dolore architecto eligendi! In, architecto suscipit.</p>
+                 </div>
+        </footer>
+</body>
+</html>

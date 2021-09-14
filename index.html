@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce website</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="Javascript/ecom.js "></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <main class="ml-4 mr-4 ">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html"><img class="img logoimg" src="images/logo.png" alt="logo"></a>
+            <h4>Shop</h4>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="row d-flex justify-content-center w-100">
+              <div class=" col-md-8 navbar-nav w-100 text-center ">
+                <a class="nav-item nav-link active mr-4" href="index.html">HOME <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link mr-4" href="#">SHOP</a>
+                <a class="nav-item nav-link mr-4" href="#">PICNIC</a>
+                <a class="nav-item nav-link mr-4" href="#">PAGE</a>
+                <a class="nav-item nav-link mr-4" href="#">PROMOTION</a>
+                <a class="nav-item nav-link mr-4" href="#">BLOG</a>
+                <a class="nav-item nav-link mr-4" href="contactus.html">CONTACT_US</a>
+              </div>
+              </div>
+              <div class="navbar-nav ml-auto ">
+                  <div class="mr-4">
+                <i class="fa fa-search" aria-hidden="true"></i></div>
+                <div class="mr-4">
+                <i class="fas fa-shopping-cart"></i></div>
+                <div class="mr-4">
+                <i class="fa fa-bars" aria-hidden="true"></i></div>
+              </div>
+            </div>
+          </nav>
+          <section>
+            <div id="demo" class="carousel slide" data-ride="carousel">
+                <ul class="carousel-indicators">
+                  <li data-target="#demo" data-slide-to="0" class="active"></li>
+                  <li data-target="#demo" data-slide-to="1"></li>
+                  <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+                <div class="carousel-inner ">
+                  <div class="carousel-item active w-100 text-center">
+                    <img  class w-100 src="images/cr.jpg" alt="Los Angeles">
+                    <div class="carousel-caption">
+                    <h1 class="mb-2">The World OF Extreme Sports</h1>
+                    <h4 class="">SAVE 20% ON ALL APPAREL</h4>
+                    <hr class="bg-dark w-50">
+                    <hr class="bg-dark w-25">
+                    <button type="button" class="btn btn-dark ">Shop now</button>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img  class="w-100" src="images/cr1.jpg" alt="Chicago">
+                    <div class="carousel-caption">
+                        <h1 class="mb-2">The World OF Extreme Sports</h1>
+                        <h4 class="">SAVE 20% ON ALL APPAREL</h4>
+                        <hr class="bg-dark w-50">
+                        <hr class="bg-dark w-25">
+                        <button type="button" class="btn btn-dark ">Shop now</button>
+                        </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="w-100" src="images/cr4.jpg" alt="New York">
+                    <div class="carousel-caption">
+                        <h1 class="mb-2">The World OF Extreme Sports</h1>
+                        <h4 class="">SAVE 20% ON ALL APPAREL</h4>
+                        <hr class="bg-dark w-50">
+                        <hr class="bg-dark w-25">
+                        <button type="button" class="btn btn-dark ">Shop now</button>
+                        </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </a>
+              </div>
+          </section>
+          <section class="promo mt-2">
+              <div class="row">
+                  <div class="col-lg-4 col-md-4 col-sm-6 col-12 d-flex m-auto justify-content-center ml-2">
+                    <button type="button" class="btn btn-primary w-100 "><i class="fa fa-plane mr-2" aria-hidden="true"></i>
+                        FREE SHIPPING WORLDWIDE</button>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-6 col-12 d-flex m-auto justify-content-center ml-2">
+                    <button type="button" class="btn btn-danger w-100"><i class="fas fa-sync mr-2"></i>100% MONEY BACK - 48 HOURS</button>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-6 col-12 d-flex m-auto justify-content-center ml-2">
+                    <button type="button" class="btn btn-warning w-100"><i class="fas fa-clock mr-2"></i>24/7 ONLINE CUSTOMER SUPPORT</button>
+                  </div>
+              </div>
+          </section>
+          <section class="features text-center clr">
+            <h4>FEATURED COLLECTIONS</h4>
+            <img src="images/design.JPG" alt="design">
+            <div class="d-flex justify-content-center">
+            <div class="featuremenu">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item active text-primary" aria-current="page">NEW ARRIVALS</li>
+                      <li class="breadcrumb-item " aria-current="page">CLOTHING</li>
+                      <li class="breadcrumb-item " aria-current="page">HATS</li>
+                      <li class="breadcrumb-item " aria-current="page">SHOES</li>
+                      <li class="breadcrumb-item " aria-current="page">BAGS</li>
+                      <li class="breadcrumb-item " aria-current="page">ACCESSOIES</li>
+                    </ol>
+                  </nav>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-4 col-6 d-flex m-auto">
+                    <div class="card">
+                        <img src="images/item1.JPG">
+                        <div class="card-body text-center">
+                            <h6>Leatt Pro Jacket</h6>
+                            <p class="text-danger">$550.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4 col-6 d-flex m-auto">
+                    <div class="card">
+                        <img src="images/item2.JPG">
+                        <div class="card-body text-center">
+                            <h6>Leatt Pro Jacket</h6>
+                            <p class="text-danger">$550.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4 col-6 d-flex m-auto">
+                    <div class="card">
+                        <img src="images/item3.JPG">
+                        <div class="card-body text-center">
+                            <h6>Leatt Pro Jacket</h6>
+                            <p class="text-danger">$550.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4 col-6 d-flex m-auto">
+                    <div class="card">
+                        <img src="images/item4.JPG">
+                        <div class="card-body text-center">
+                            <h6>Leatt Pro Jacket</h6>
+                            <p class="text-danger">$550.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4 col-6 d-flex m-auto">
+                    <div class="card">
+                        <img src="images/item5.JPG">
+                        <div class="card-body text-center">
+                            <h6>Leatt Pro Jacket</h6>
+                            <p class="text-danger"> $550.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4 col-6 d-flex m-auto">
+                    <div class="card">
+                        <img src="images/item6.JPG">
+                        <div class="card-body text-center">
+                            <h6>Leatt Pro Jacket</h6>
+                            <p class="text-danger">$550.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-4 col-6 d-flex m-auto">
+                    <div class="card">
+                        <img src="images/item7.JPG">
+                        <div class="card-body text-center">
+                            <h6>Leatt Pro Jacket</h6>
+                            <p class="text-danger">$550.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4 col-6 d-flex m-auto">
+                    <div class="card">
+                        <img src="images/item8.JPG">
+                        <div class="card-body text-center">
+                            <h6>Leatt Pro Jacket</h6>
+                            <p class="text-danger">$550.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4 col-6 d-flex m-auto">
+                    <div class="card">
+                        <img src="images/item9.JPG">
+                        <div class="card-body text-center">
+                            <h6>Leatt Pro Jacket</h6>
+                            <p class="text-danger">$550.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4 col-6 d-flex m-auto">
+                    <div class="card">
+                        <img src="images/item10.JPG">
+                        <div class="card-body text-center">
+                            <h6>Leatt Pro Jacket</h6>
+                            <p class="text-danger">$550.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4 col-6 d-flex m-auto">
+                    <div class="card">
+                        <img src="images/item11.JPG">
+                        <div class="card-body text-center">
+                            <h6>Leatt Pro Jacket</h6>
+                            <p class="text-danger">$550.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4 col-6 d-flex m-auto">
+                    <div class="card">
+                        <img src="images/item12.JPG">
+                        <div class="card-body text-center">
+                            <h6>Leatt Pro Jacket</h6>
+                            <p class="text-danger">$550.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </section>
+          <section class="deals mt-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                    <img  class="img img-fluid w-100 h-100" src="images/tshirt.jpg" alt="tshirt">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-12 ">
+                    <h6>HOT DEALS</h6>
+                    <div class="row">
+                        <span class="dot mr-2 ml-3"></span>
+                        <span class="dot mr-2 bg-danger"></span>
+                        <span class="dot bg-warning"></span>
+                    </div>
+                    <h1 class="mt-5" style="font-family: 'Times New Roman', serif;">Tshirts</h1>
+                    <div class="row ml-2">
+                        <span class="fa fa-star checked fa-sm"></span>
+                        <span class="fa fa-star checked fa-sm"></span>
+                        <span class="fa fa-star checked fa-sm"></span>
+                        <span class="fa fa-star checked fa-sm"></span>
+                        <span class="fa fa-star checked fa-sm"></span>
+                        <h6 style="font-family: 'Times New Roman', serif; font-style: italic; color: lightgrey;">(05 Reviews)</h6>
+                    </div>
+                    <h1 class="text-danger mt-4">$230.00</h1>
+                    <p class="text-dark">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, excepturi perferendis quidem, vel, velit temporibus unde
+                         quisquam ad fuga repudiandae rerum iusto ratione laborum aspernatur hic aliquid labore cum obcaecati.
+                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum magni, aut necessitatibus maxime voluptatibus atque amet
+                         ab quam corrupti possimus est hic modi illo ea, cupiditate omnis earum obcaecati tenetur.
+                    </p>
+                    <ul>
+                        <li class="d-flex" >
+                            <span class="doticon mr-2  bg-dark "></span>
+                            <h4>Color</h4>
+                            <div class="row">
+                                <span class="dot mr-2 "></span>
+                                <span class="dot mr-2 bg-danger"></span>
+                                <span class="dot bg-warning"></span>
+                            </div>
+                        </li>
+                        <li class="d-flex" >
+                            <span class="doticon mr-2 bg-dark "></span>
+                            <h4>SIZE</h4>
+                            <div class="row ml-4">
+                                <h6 class="m-1 border text-center" style="width: 30px;">S</h6>
+                                <h6 class="m-1 border text-center" style="width: 30px;">M</h6>
+                                <h6 class="m-1 border text-center" style="width: 30px;">XL</h6>
+                                <h6 class="m-1 border text-center" style="width: 30px;">XXL</h6>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="timer d-flex ">
+                        <div class="m-1 border text-center" style="width: 70px; height: 70px; background-color: skyblue;"><h4>25</h4><p style="font-size:14px">Days</p></div>
+                        <div class="m-1 border text-center" style="width: 70px; height: 70px; background-color: skyblue;"><h4>14</h4><p style="font-size:14px">Hours</p></div>
+                        <div class="m-1 border text-center" style="width: 70px; height: 70px; background-color: skyblue;"><h4>57</h4><p style="font-size:14px">Minutes</p></div>
+                        <div class="m-1 border text-center" style="width: 70px; height: 70px; background-color: skyblue;"><h4>43</h4><p style="font-size:14px">Secs</p></div>
+                    </div>
+                </div>
+
+            </div>
+          </section>
+          <section class="socialmedia text-center mt-4">
+            <h4>INSTAGRAM</h4>
+            <img src="images/design.JPG">
+            <div class="row mt-4">
+                <div class="col-lg-2 col-md-2 col-sm-4 col-12 m-auto">
+                    <img class=" img w-100 h-100" src="images/insta1.JPG" alt="insta">
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4 col-12 m-auto">
+                    <img class=" img w-100 h-100" src="images/insta2.JPG" alt="insta">
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4 col-12 m-auto">
+                    <img class=" img w-100 h-100" src="images/insta3.JPG" alt="insta">
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4 col-12 m-auto">
+                    <img class=" img w-100 h-100" src="images/insta4.JPG" alt="insta">
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4 col-12 m-auto">
+                    <img class=" img w-100 h-100" src="images/insta5.JPG" alt="insta">
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4 col-12 m-auto">
+                    <img class=" img w-100 h-100" src="images/insta6.JPG" alt="insta">
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-12 m-auto">
+                    <div class="card text-center ">
+                        <h4>BEST SELLER</h4>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 m-auto">
+                                    <img class="itemimg" src="images/t1.JPG" alt="products">
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 m-auto text-left">
+                                    <h6 class="mt-0" style="font-family: 'Times New Roman', serif;">Leatt Pro Jacket</h6>
+                                    <div class="row" style="margin-left: 0px;">
+                                        <span class="fa fa-star checked fa-sm" style="font-size: 8px;"></span>
+                                        <span class="fa fa-star checked fa-sm" style="font-size: 8px;"></span>
+                                        <span class="fa fa-star checked fa-sm" style="font-size: 8px;"></span>
+                                        <span class="fa fa-star checked fa-sm" style="font-size: 8px;"></span>
+                                        <span class="fa fa-star checked fa-sm" style="font-size: 8px;"></span>                                    </div>
+                                    <h6 class="text-danger mt-2">$99.00</h6>
+                                    <div class=" d-flex mt-4">
+                                        <div class="m-1 border text-center" style="width: 70px;  background-color: skyblue;"><i class="fa fa-shopping-cart" aria-hidden="true"></i></div>
+                                        <div class="m-1 border text-center" style="width: 70px; "><i class="fas fa-retweet fa-rotate-90"></i></div>
+                                        <div class="m-1 border text-center" style="width: 70px; "><i class="fas fa-heart"></i></div>
+                                        <div class="m-1 border text-center" style="width: 70px; "><i class="fas fa-eye"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 m-auto">
+                                    <img class="itemimg" src="images/t2.JPG" alt="products">
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 m-auto text-left">
+                                    <h6 class="mt-0" style="font-family: 'Times New Roman', serif;">Original Archilles Mid</h6>
+                                    <div class="row" style="margin-left: 0px;">
+                                        <span class="fa fa-star checked fa-sm" style="font-size: 8px;"></span>
+                                        <span class="fa fa-star checked fa-sm" style="font-size: 8px;"></span>
+                                        <span class="fa fa-star checked fa-sm" style="font-size: 8px;"></span>
+                                        <span class="fa fa-star checked fa-sm" style="font-size: 8px;"></span>
+                                        <span class="fa fa-star checked fa-sm" style="font-size: 8px;"></span>                                    </div>
+                                    <h6 class="text-danger mt-2">$260.00</h6>
+                                    <div class=" d-flex mt-4">
+                                        <div class="m-1 border text-center" style="width: 70px;  background-color: skyblue;"><i class="fa fa-shopping-cart" aria-hidden="true"></i></div>
+                                        <div class="m-1 border text-center" style="width: 70px; "><i class="fas fa-retweet fa-rotate-90"></i></div>
+                                        <div class="m-1 border text-center" style="width: 70px; "><i class="fas fa-heart"></i></div>
+                                        <div class="m-1 border text-center" style="width: 70px; "><i class="fas fa-eye"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 m-auto">
+                                    <img class="itemimg" src="images/t3.JPG" alt="products">
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 m-auto text-left">
+                                    <h6 class="mt-0" style="font-family: 'Times New Roman', serif;">Vinperl Handbag</h6>
+                                    <div class="row" style="margin-left: 0px;">
+                                        <span class="fa fa-star checked fa-sm" style="font-size: 8px;"></span>
+                                        <span class="fa fa-star checked fa-sm" style="font-size: 8px;"></span>
+                                        <span class="fa fa-star checked fa-sm" style="font-size: 8px;"></span>
+                                        <span class="fa fa-star checked fa-sm" style="font-size: 8px;"></span>
+                                        <span class="fa fa-star checked fa-sm" style="font-size: 8px;"></span>                                    </div>
+                                    <h6 class="text-danger mt-2">$220.00</h6>
+                                    <div class=" d-flex mt-4">
+                                        <div class="m-1 border text-center" style="width: 70px;  background-color: skyblue;"><i class="fa fa-shopping-cart" aria-hidden="true"></i></div>
+                                        <div class="m-1 border text-center" style="width: 70px; "><i class="fas fa-retweet fa-rotate-90"></i></div>
+                                        <div class="m-1 border text-center" style="width: 70px; "><i class="fas fa-heart"></i></div>
+                                        <div class="m-1 border text-center" style="width: 70px; "><i class="fas fa-eye"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-12 m-auto">
+                    <div class="card text-center">
+                        <h4>TOP RATE</h4>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 m-auto">
+                                    <img class="itemimg" src="images/t4.JPG" alt="products">
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 m-auto text-left">
+                                    <h6 class="mt-0" style="font-family: 'Times New Roman', serif;">Seafarer Button Up</h6>
+                                    <div class="row" style="margin-left: 0px;">
+                                        <span class="fa fa-star checked fa-sm" style="font-size: 8px;"></span>
+                                        <span class="fa fa-star checked fa-sm" style="font-size: 8px;"></span>
+                                        <span class="fa fa-star checked fa-sm" style="font-size: 8px;"></span>
+                                        <span class="fa fa-star checked fa-sm" style="font-size: 8px;"></span>
+                                        <span class="fa fa-star checked fa-sm" style="font-size: 8px;"></span>                                    </div>
+                                    <h6 class="text-danger mt-2">$335.00</h6>
+                                    <div class=" d-flex mt-4">
+                                        <div class="m-1 border text-center" style="width: 70px;  background-color: skyblue;"><i class="fa fa-shopping-cart" aria-hidden="true"></i></div>
+                                        <div class="m-1 border text-center" style="width: 70px; "><i class="fas fa-retweet fa-rotate-90"></i></div>
+                                        <div class="m-1 border text-center" style="width: 70px; "><i class="fas fa-heart"></i></div>
+                                        <div class="m-1 border text-center" style="width: 70px; "><i class="fas fa-eye"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 m-auto">
+                                    <img class="itemimg" src="images/t5.JPG" alt="products">
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 m-auto text-left">
+                                    <h6 class="mt-0" style="font-family: 'Times New Roman', serif;">Pointed Toe Flat</h6>
+                                    <div class="row" style="margin-left: 0px;">
+                                        <span class="fa fa-star checked fa-sm" style="font-size: 8px;"></span>
+                                        <span class="fa fa-star checked fa-sm" style="font-size: 8px;"></span>
+                                        <span class="fa fa-star checked fa-sm" style="font-size: 8px;"></span>
+                                        <span class="fa fa-star checked fa-sm" style="font-size: 8px;"></span>
+                                        <span class="fa fa-star checked fa-sm" style="font-size: 8px;"></span>                                    </div>
+                                    <h6 class="text-danger mt-2">$287.00</h6>
+                                    <div class=" d-flex mt-4">
+                                        <div class="m-1 border text-center" style="width: 70px;  background-color: skyblue;"><i class="fa fa-shopping-cart" aria-hidden="true"></i></div>
+                                        <div class="m-1 border text-center" style="width: 70px; "><i class="fas fa-retweet fa-rotate-90"></i></div>
+                                        <div class="m-1 border text-center" style="width: 70px; "><i class="fas fa-heart"></i></div>
+                                        <div class="m-1 border text-center" style="width: 70px; "><i class="fas fa-eye"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 m-auto">
+                                    <img class="itemimg" src="images/t6.JPG" alt="products">
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 m-auto text-left">
+                                    <h6 class="mt-0" style="font-family: 'Times New Roman', serif;">Leatt Pro Jacket</h6>
+                                    <div class="row" style="margin-left: 0px;">
+                                        <span class="fa fa-star checked fa-sm" style="font-size: 8px;"></span>
+                                        <span class="fa fa-star checked fa-sm" style="font-size: 8px;"></span>
+                                        <span class="fa fa-star checked fa-sm" style="font-size: 8px;"></span>
+                                        <span class="fa fa-star checked fa-sm" style="font-size: 8px;"></span>
+                                        <span class="fa fa-star checked fa-sm" style="font-size: 8px;"></span>                                    </div>
+                                    <h6 class="text-danger mt-2">$99.00</h6>
+                                    <div class=" d-flex mt-4">
+                                        <div class="m-1 border text-center" style="width: 70px;  background-color: skyblue;"><i class="fa fa-shopping-cart" aria-hidden="true"></i></div>
+                                        <div class="m-1 border text-center" style="width: 70px; "><i class="fas fa-retweet fa-rotate-90"></i></div>
+                                        <div class="m-1 border text-center" style="width: 70px; "><i class="fas fa-heart"></i></div>
+                                        <div class="m-1 border text-center" style="width: 70px; "><i class="fas fa-eye"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-12 m-auto">
+                    <div class="card text-center">
+                        <h4>TOP SPECIAL</h4>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 m-auto">
+                                    <img class="itemimg" src="images/t7.JPG" alt="products">
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 m-auto text-left">
+                                    <h6 class="mt-0" style="font-family: 'Times New Roman', serif;">Klim Dakar Jacket</h6>
+                                    <div class="row" style="margin-left: 0px;">
+                                        <span class="fa fa-star checked fa-sm" style="font-size: 8px;"></span>
+                                        <span class="fa fa-star checked fa-sm" style="font-size: 8px;"></span>
+                                        <span class="fa fa-star checked fa-sm" style="font-size: 8px;"></span>
+                                        <span class="fa fa-star checked fa-sm" style="font-size: 8px;"></span>
+                                        <span class="fa fa-star checked fa-sm" style="font-size: 8px;"></span>                                    </div>
+                                    <h6 class="text-danger mt-2">$99.00</h6>
+                                    <div class=" d-flex mt-4">
+                                        <div class="m-1 border text-center" style="width: 70px;  background-color: skyblue;"><i class="fa fa-shopping-cart" aria-hidden="true"></i></div>
+                                        <div class="m-1 border text-center" style="width: 70px; "><i class="fas fa-retweet fa-rotate-90"></i></div>
+                                        <div class="m-1 border text-center" style="width: 70px; "><i class="fas fa-heart"></i></div>
+                                        <div class="m-1 border text-center" style="width: 70px; "><i class="fas fa-eye"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 m-auto">
+                                    <img class="itemimg" src="images/t8.JPG" alt="products">
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 m-auto text-left">
+                                    <h6 class="mt-0" style="font-family: 'Times New Roman', serif;">Klim Inversion Jacket</h6>
+                                    <div class="row" style="margin-left: 0px;">
+                                        <span class="fa fa-star checked fa-sm" style="font-size: 8px;"></span>
+                                        <span class="fa fa-star checked fa-sm" style="font-size: 8px;"></span>
+                                        <span class="fa fa-star checked fa-sm" style="font-size: 8px;"></span>
+                                        <span class="fa fa-star checked fa-sm" style="font-size: 8px;"></span>
+                                        <span class="fa fa-star checked fa-sm" style="font-size: 8px;"></span>                                    </div>
+                                    <h6 class="text-danger mt-2">$260.00</h6>
+                                    <div class=" d-flex mt-4">
+                                        <div class="m-1 border text-center" style="width: 70px;  background-color: skyblue;"><i class="fa fa-shopping-cart" aria-hidden="true"></i></div>
+                                        <div class="m-1 border text-center" style="width: 70px; "><i class="fas fa-retweet fa-rotate-90"></i></div>
+                                        <div class="m-1 border text-center" style="width: 70px; "><i class="fas fa-heart"></i></div>
+                                        <div class="m-1 border text-center" style="width: 70px; "><i class="fas fa-eye"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 m-auto">
+                                    <img class="itemimg" src="images/t9.JPG" alt="products">
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 m-auto text-left">
+                                    <h6 class="mt-0" style="font-family: 'Times New Roman', serif;">Leatt Pro Jacket</h6>
+                                    <div class="row" style="margin-left: 0px;">
+                                        <span class="fa fa-star checked fa-sm" style="font-size: 8px;"></span>
+                                        <span class="fa fa-star checked fa-sm" style="font-size: 8px;"></span>
+                                        <span class="fa fa-star checked fa-sm" style="font-size: 8px;"></span>
+                                        <span class="fa fa-star checked fa-sm" style="font-size: 8px;"></span>
+                                        <span class="fa fa-star checked fa-sm" style="font-size: 8px;"></span>                                    </div>
+                                    <h6 class="text-danger mt-2">$220.00</h6>
+                                    <div class=" d-flex mt-4">
+                                        <div class="m-1 border text-center" style="width: 70px;  background-color: skyblue;"><i class="fa fa-shopping-cart" aria-hidden="true"></i></div>
+                                        <div class="m-1 border text-center" style="width: 70px; "><i class="fas fa-retweet fa-rotate-90"></i></div>
+                                        <div class="m-1 border text-center" style="width: 70px; "><i class="fas fa-heart"></i></div>
+                                        <div class="m-1 border text-center" style="width: 70px; "><i class="fas fa-eye"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+              </section>
+              <footer class="page-footer font-small footerpart">
+                  <div class="container text-center  text-white">
+                    <img class="img  footerimg mt-4" src="images/footer.png" alt="footerimg">
+                    <div class="d-flex justify-content-center mt-2">
+                    <div class="container w-75 text-center">
+                        <p><q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non deserunt deleniti esse ut corrupti facilis tempore suscipit ratione harum consequuntur quos, illo blanditiis dolore necessitatibus
+                             voluptate quaerat at numquam pariatur?</q></p>
+                    </div>
+                    </div>
+                    <h4 class="ml-4">BILLY GRAHAM</h4>
+                    <h6><i>Web Designer</i></h6>
+                    <div class="d-flex justify-content-center ">
+                        <div class="row">
+                            <span class="footercircle  "></span>
+                            <div class="footercircle mr-2 ">
+                                <div class="footercircle1 "></div>
+                                </div>
+                            <span class="footercircle "></span>
+                        </div>
+                    </div>
+                  </div>
+                  <div class=" mt-4 ">
+                      <div class="d-flex text-center ">
+                        <div style="width: 20%; height: 50px; background-color: blue;">
+                            <img src="images/facebook.png" alt="facebookicon" style="width: 16px; height: 16px; border-radius: 50%;">
+                            <a class="text-white" href="#" style="text-decoration: none;">FACEBOOK</a>
+                          </div>
+                          <div style="width: 20%; height: 50px; background-color:skyblue; ">
+                            <img src="images/twitter.png" alt="twittericon" style="width: 16px; height: 16px; border-radius: 50%;">
+                            <a class="text-white" href="#" style="text-decoration: none;">TWITTER</a>
+                          </div>
+                          <div style="width: 20%; height: 50px; background-color:#e227e2 ">
+                            <img src="images/instagram.jpg" alt="instagramicon" style="width: 16px; height: 16px; border-radius: 50%;">
+                            <a class="text-white" href="#" style="text-decoration: none;">INSTAGRAM</a>
+                          </div>
+                          <div style="width: 20%; height: 50px; background-color:#b33f66; ">
+                            <img src="images/dribble.JPG" alt="dribbleicon" style="width: 16px; height: 16px; border-radius: 50%;">
+                            <a class="text-white" href="#" style="text-decoration: none;">DRIBBLE</a>
+                          </div>
+                          <div style="width: 20%; height: 50px; background-color:red; ">
+                            <img src="images/pintrest.png" alt="pintresticon" style="width: 16px; height: 16px; border-radius: 50%;">
+                            <a class="text-white" href="#" style="text-decoration: none;">PINTREST</a>
+                          </div>
+                       </div>
+                       </div>
+                       <div class="text-center">
+                           <img src="images/logo.png" alt="logo" style="width: 170px; height: 40px; margin-top: 25px;;" >
+                       </div>
+                       <div class="container text-center text-white mt-4">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore qui doloremque laborum quos quo asperiores beatae exercitationem,
+                             aliquam ipsam sapiente rerum fugiat delectus quia dolore architecto eligendi! In, architecto suscipit.</p>
+                       </div>
+              </footer>
+    </main>
+</body>
+</html>
